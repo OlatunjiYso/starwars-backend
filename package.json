@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "starwars server side",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen-types": "graphql-codegen --config codegen.yml"
+  },
+  "keywords": [
+    "Graphql",
+    "Node",
+    "Express",
+    "HTTP"
+  ],
+  "author": "OlatunjiYusuf",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-core": "^3.7.0",
+    "apollo-server-express": "^3.7.0",
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "graphql": "^16.4.0",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.6.2",
+    "@graphql-codegen/typescript": "2.4.10"
+  }
+}

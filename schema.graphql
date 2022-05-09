@@ -1,0 +1,26 @@
+type Person {
+  name: String!
+  height: String!
+  mass: String!
+  gender: String!
+  homeworld: String!
+}
+
+type PeopleQueryResponse {
+  people: [Person]!
+  count: Int!
+  page: Int!
+  success: Boolean!
+  errorMsg: String
+}
+
+type PersonQueryResponse {
+  person: Person
+  success: Boolean!
+  errorMsg: String
+}
+
+type Query {
+  people(pageNo: Int!): PeopleQueryResponse
+  person(name: String!): PersonQueryResponse
+}
