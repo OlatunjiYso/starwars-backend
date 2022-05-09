@@ -77,6 +77,7 @@ export const fetchPerson = async (name: string) => {
 
 const serializePersons = (persons: RawPerson[]) =>
   persons.map((p) => serializePerson(p));
+  
 const serializePerson = (rawPerson: RawPerson): Person => {
   const rawPersonStringified = JSON.stringify(rawPerson);
   const serialized: Person = JSON.parse(rawPersonStringified);
